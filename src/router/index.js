@@ -28,7 +28,12 @@ const router = createRouter({
       path: '/post',
       name: 'post',
       component: Posts
-    }
+    },
+    {
+      path: '/createform',
+      name: 'createform', 
+      component: Createform
+    }, 
   ],
 })
 
