@@ -15,7 +15,7 @@ function increase() {
     if(count.value > 10) {
         count.value = 10;
     }
-}
+} 
 // export default {
     
 // }

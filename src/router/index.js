@@ -2,6 +2,8 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import Composition from '../views/Composition.vue'
 import Posts from '@/views/Posts.vue'
+import Foods from '@/views/Foods.vue'
+import Createform from '@/functions/Createform.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -30,9 +32,19 @@ const router = createRouter({
       component: Posts
     },
     {
+      path: '/foods',
+      name: 'foods',
+      component: Foods
+    },
+    {
       path: '/createform',
       name: 'createform', 
       component: Createform
+    }, 
+    {
+      path: "/FoodList",
+      name: "FoodList",
+      component: 'FoodList'
     }, 
   ],
 })
